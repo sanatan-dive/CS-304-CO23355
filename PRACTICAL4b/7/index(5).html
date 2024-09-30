@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise #7: Simple playlist</title>
+    <link rel="stylesheet" href="exercise7.css">
+    <script>
+        window.onload = function() {
+            const addButton = document.getElementById('addButton');
+            const songInput = document.getElementById('songTextInput');
+            const playlist = document.getElementById('playlist');
+
+            addButton.addEventListener('click', function() {
+                const songName = songInput.value.trim();
+
+                if (songName !== '') {
+                    // Create a new list item (li) for the song
+                    const listItem = document.createElement('li');
+                    listItem.textContent = songName;
+
+                    // Create a delete link
+                    const deleteLink = document.createElement('a');
+                    deleteLink.href = '#';
+                    deleteLink.textContent = ' [Delete]';
+                    deleteLink.style.color = 'red'; // Style the delete link
+
+                    // Add click event to delete the song
+                    deleteLink.addEventListener('click', function(event) {
+                        event.preventDefault(); // Prevent default link behavior
+                        playlist.removeChild(listItem); // Remove the song from the list
+                    });
+
+                    // Append the delete link to the list item
+                    listItem.appendChild(deleteLink);
+
+                    // Append the new list item to the playlist (ul)
+                    playlist.appendChild(listItem);
+
+                    // Clear the input field after adding the song
+                    songInput.value = '';
+                } else {
+                    alert('Please enter a valid song name.');
+                }
+            });
+        };
+    </script>
+</head>
+<body>
+
+<form>
+    <input type="text" id="songTextInput" size="40" placeholder="Song name">
+    <input type="button" id="addButton" value="Add Song">
+</form>
+
+<ul id="playlist">
+    <!-- Songs will be added here -->
+</ul>
+
+</body>
+</html>

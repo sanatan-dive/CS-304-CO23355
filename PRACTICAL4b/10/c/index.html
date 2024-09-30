@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Page</title>
+    <script>
+        function preventNavigation(event) {
+            // Prevent navigation by setting the location back
+            window.location.href = window.location.href;
+        }
+
+        window.onbeforeunload = function(event) {
+            preventNavigation(event);
+            return "Are you sure you want to leave this page?";
+        };
+
+        // Set a timeout to prevent loop
+        setTimeout(() => {
+            window.onbeforeunload = function() {
+                window.location.href = window.location.href; // Redirect back
+            };
+        }, 100);
+    </script>
+</head>
+<body>
+    <h1>Welcome to the Sticky Page!</h1>
+    <p>Try to navigate away from this page!</p>
+</body>
+</html>

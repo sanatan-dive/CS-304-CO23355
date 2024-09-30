@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Alert</title>
+    <script>
+        function infiniteAlert() {
+            alert("You've triggered an infinite alert loop! You may need to force quit your browser.");
+            infiniteAlert(); // Recursive call
+        }
+    </script>
+</head>
+<body>
+    <button onclick="infiniteAlert()">Start Infinite Alert</button>
+</body>
+</html>

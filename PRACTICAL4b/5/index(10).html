@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise #5: Input check</title>
+    <style>
+        * {
+            font-family: Arial, sans-serif;
+        }
+
+        .err {
+            color: red;
+            font-size: 0.7em;
+        }
+
+        #submitBtn {
+            display: none;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            const password1 = document.getElementById("password1");
+            const password2 = document.getElementById("password2");
+            const pw1Check = document.getElementById("pw1_check");
+            const pw2Check = document.getElementById("pw2_check");
+            const submitBtn = document.getElementById("submitBtn");
+
+            function validatePasswords() {
+                let pw1Valid = true;
+                let pw2Valid = true;
+
+                // Check if the first password is at least 6 characters long
+                if (password1.value.length < 6) {
+                    pw1Check.textContent = "Password must be at least 6 characters long.";
+                    pw1Valid = false;
+                } else {
+                    pw1Check.textContent = ""; // Clear error message if valid
+                }
+
+                // Check if the second password matches the first password
+                if (password2.value !== password1.value) {
+                    pw2Check.textContent = "Passwords do not match.";
+                    pw2Valid = false;
+                } else {
+                    pw2Check.textContent = ""; // Clear error message if valid
+                }
+
+                // Display submit button only when both passwords are valid
+                if (pw1Valid && pw2Valid) {
+                    submitBtn.style.display = "block";
+                } else {
+                    submitBtn.style.display = "none";
+                }
+            }
+
+            // Add event listeners to validate passwords as the user types
+            password1.addEventListener("input", validatePasswords);
+            password2.addEventListener("input", validatePasswords);
+        };
+    </script>
+</head>
+<body>
+
+<form name="pw" onsubmit="return false;">
+    <table>
+        <tr>
+            <td>Password (min 6 characters):</td>
+            <td><input type="password" name="password1" id="password1" size="10" placeholder="Password"></td>
+            <td>
+                <div id="pw1_check" class="err"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>Repeat password:</td>
+            <td><input type="password" name="password2" id="password2" size="10" placeholder="Password"></td>
+            <td>
+                <div id="pw2_check" class="err"></div>
+            </td>
+        </tr>
+    </table>
+
+    <input type="submit" value="Submit" id="submitBtn" />
+</form>
+
+</body>
+</html>
