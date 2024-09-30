@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Bootstrap Webpage</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero-section {
+      background-color: #007bff;
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Website using bootstrap</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <h1>Welcome to My Website</h1>
+      <p>Your success is our mission.</p>
+      <a href="#features" class="btn btn-light btn-lg">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="container py-5" id="features">
+    <div class="row">
+      <div class="col-md-4">
+        <h3>Feature 1</h3>
+        <p>This is a description of the first feature. It’s amazing!</p>
+      </div>
+      <div class="col-md-4">
+        <h3>Feature 2</h3>
+        <p>This is a description of the second feature. It’s even better!</p>
+      </div>
+      <div class="col-md-4">
+        <h3>Feature 3</h3>
+        <p>This is a description of the third feature. You won’t believe it!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light text-center py-4">
+    <p>&copy; 2024 MyWebsite. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
