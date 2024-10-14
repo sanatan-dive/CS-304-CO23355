@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #e0f7fa; /* Soft light blue background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #004d40; /* Deep teal for a clean look */
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #00796b; /* A slightly lighter teal */
+  margin-bottom: 1rem;
+}
+
+fieldset {
+  border: 2px solid #004d40; /* Add a solid border for contrast */
+  padding: 1.5rem;
+  border-radius: 10px; /* Rounded corners */
+  background-color: #ffffff; /* White background for form elements */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.inactive {
+  display: none;
+}
+
+#error {
+  color: #d32f2f; /* Bright red for errors */
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+/* Form Styles */
+input[type="text"], select {
+  padding: 0.75rem;
+  margin: 0.75rem 0;
+  width: 100%; /* Full width for better form layout */
+  max-width: 400px; /* Limit width on large screens */
+  border: 2px solid #00796b;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+input[type="submit"] {
+  background-color: #007bff; /* Primary blue button */
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Menu Styles */
+#menu {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  input[type="text"], select {
+    width: 100%; /* Full width for mobile */
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 1rem;
+  }
+}

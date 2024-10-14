@@ -1,0 +1,1476 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Open Sans";}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+p
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+code
+	{font-family:"Courier New";}
+span.label
+	{mso-style-name:label;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-IN link=blue vlink="#954F72" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><u><span style='font-size:18.0pt;font-family:"Open Sans",sans-serif;
+color:black'>CS402: Lab Practical 6: Quiz and Extensions</span></u></b></p>
+
+<p style='margin:0in;text-align:justify;background:white'><span
+style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:black'>&nbsp;</span></p>
+
+<p style='margin:0in;text-align:justify;background:white'><span
+style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:black'>In this
+Practical, you will be practicing the HTML, CSS, and JavaScript that we learned
+in lecture.</span></p>
+
+<p style='margin:0in;text-align:justify;background:white'><span
+style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:black'>&nbsp;</span></p>
+
+<p style='margin:0in;text-align:justify;background:white'><span
+style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:black'>For&nbsp;<strong><span
+style='font-family:"Open Sans",sans-serif'>Part 1</span></strong></span><strong><span
+style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:red'>(4 Marks)</span></strong><span
+style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:black'>, you
+will be implementing a&nbsp;</span><span style='color:black'><a
+href="https://www.buzzfeed.com/"><span style='font-size:14.0pt;font-family:
+"Open Sans",sans-serif;color:#1228E2;text-decoration:none'>Buzzfeed</span></a></span><span
+style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:black'>-style
+personality quiz. Unlike other practical, a lot of the HTML and CSS is already
+implemented for you, but you will still need to make some HTML and CSS
+modifications to complete the assignment. None of the JavaScript has been
+implemented for you, other than&nbsp;</span><code><span style='font-size:11.5pt;
+color:black'>constants.js</span></code><span style='font-size:14.0pt;
+font-family:"Open Sans",sans-serif;color:black'>&nbsp;that constants the quiz
+result information.</span></p>
+
+<p style='margin:0in;text-align:justify;background:white'><span
+style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:black'>&nbsp;</span></p>
+
+<p style='margin:0in;text-align:justify;background:white'><span
+style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:black'>For&nbsp;<strong><span
+style='font-family:"Open Sans",sans-serif'>Part 2</span></strong></span><strong><span
+style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:red'>(6 Marks)</span></strong><span
+style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:black'>, you
+will finish a partially-implemented Chrome extension. </span></p>
+
+<p style='margin:0in;text-align:justify;background:white'><strong><span
+style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:black'>&nbsp;</span></strong></p>
+
+<p style='margin:0in;text-align:justify;background:white'><strong><span
+style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:black'>Part 3</span></strong><strong><span
+style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:red'>(5 Marks)</span></strong><span
+style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:black'> can be
+completed for extra credit. Part 3 involves implementing a second Chrome
+extension.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span class=label><b><span style='font-size:12.0pt;font-family:"Open Sans",sans-serif;
+color:#FE6993'>&nbsp;</span></b></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span class=label><b><span style='font-size:12.0pt;font-family:"Open Sans",sans-serif;
+color:#FE6993'>Due Date:</span></b></span><span style='font-size:12.0pt;
+font-family:"Open Sans",sans-serif;color:black;background:white'>&nbsp;Fri, May
+28, 2021 at 11:59pm&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><em><span style='font-size:12.0pt;font-family:"Open Sans",sans-serif;
+color:black;background:white'>(late cut-off: Sun, May 30, 2021 at 11:59pm)</span></em></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:18.0pt;font-family:"Open Sans",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:18.0pt;font-family:"Open Sans",sans-serif;
+color:black'>Part 1: Personality quiz&nbsp;</span></b><b><span
+style='font-size:17.5pt;font-family:"Courier New";color:black'>index.html</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>For Part 1, you will create a personality quiz called “Adopt A Dog
+And We’ll Reveal A Deep Truth About You.”</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>We have completed a lot of the HTML and CSS for you already. We
+expect you will have to make modifications to the following files to complete
+the assignment:</span></p>
+
+<ul style='margin-top:0in' type=circle>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:11.5pt;font-family:"Courier New"'>index.html</span><span
+     style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>: Most of the
+     HTML is written for you, but you will likely need to make some
+     modifications for the mobile layout and the JavaScript.</span></li>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:11.5pt;font-family:"Courier New"'>style.css</span><span
+     style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>: A lot of the
+     CSS is already written for you in&nbsp;</span><span style='font-size:11.5pt;
+     font-family:"Courier New"'>provided-style.css</span><span
+     style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>, but you will
+     need to make some modifications for all parts of the assignment. Please
+     make your CSS changes in&nbsp;</span><span style='font-size:11.5pt;
+     font-family:"Courier New"'>style.css</span><span style='font-size:14.0pt;
+     font-family:"Open Sans",sans-serif'>&nbsp;and not&nbsp;</span><span
+     style='font-size:11.5pt;font-family:"Courier New"'>provided-style.css</span><span
+     style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>.</span></li>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:11.5pt;font-family:"Courier New"'>script.js</span><span
+     style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>: Write your
+     JavaScript here.</span></li>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:13.5pt;font-family:"Open Sans",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:13.5pt;font-family:"Open Sans",sans-serif;
+color:black'>Overall appearance and behaviour</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>The following video shows the look and behaviour of the quiz we
+are asking you to implement.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><img border=0
+width=168 height=54 src="CS402-Lab%20Practical%206_files/image001.png"></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'>(Given in the
+folder)</p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>One detail that is hard to see in the video:</span></p>
+
+<ul style='margin-top:0in' type=circle>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>After
+     the quiz is completed (i. e. after all three questions have been
+     answered), it should&nbsp;<i>not</i>&nbsp;be possible to change your
+     answer anymore.</span></li>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:13.5pt;font-family:"Open Sans",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:13.5pt;font-family:"Open Sans",sans-serif;
+color:black'>1. Choice grid</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>Much of the CSS has already been completed for you, but you need
+to finish styling the answer choice grids.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>Choice grid</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><img border=0
+width=469 height=336 id="Picture 1"
+src="CS402-Lab%20Practical%206_files/image002.png"></p>
+
+<ul style='margin-top:0in' type=circle>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>You
+     should use a&nbsp;<b>multi-row flexbox</b>&nbsp;to achieve this layout.</span></li>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+      line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>We
+      didn’t talk about multi-row flexbox layout in class, but you can allow
+      flex items to wrap onto the next line (i.e. the second row) by
+      setting&nbsp;</span><span style='font-size:11.5pt;font-family:"Courier New"'>flex-wrap:
+      wrap;</span><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>&nbsp;onto
+      the flex container.</span></li>
+ </ul>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>There
+     is&nbsp;</span><span style='font-size:11.5pt;font-family:"Courier New"'>20px</span><span
+     style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>&nbsp;of space
+     between each row</span></li>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>Each
+     flex item has a width of&nbsp;</span><span style='font-size:11.5pt;
+     font-family:"Courier New"'>32.5%</span><span style='font-size:14.0pt;
+     font-family:"Open Sans",sans-serif'>, and each item is spread out with as
+     much space between the other as there can be in the flex container.</span></li>
+</ul>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;text-align:justify;line-height:normal'><b><span
+style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;text-align:justify;line-height:normal'><b><span
+style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:black'>Choice:
+unanswered </span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><img border=0 width=211 height=133 id="Picture 2"
+src="CS402-Lab%20Practical%206_files/image003.png"></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;text-align:justify;line-height:normal'><span style='font-size:
+14.0pt;font-family:"Open Sans",sans-serif;color:black'>Container</span></p>
+
+<ul style='margin-top:0in' type=circle>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+      line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>Background
+      colour is&nbsp;</span><span style='font-size:11.5pt;font-family:"Courier New"'>#f4f4f4</span></li>
+  <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+      line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>Border
+      is&nbsp;</span><span style='font-size:11.5pt;font-family:"Courier New"'>1px</span><span
+      style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>&nbsp;thick
+      and color is&nbsp;</span><span style='font-size:11.5pt;font-family:"Courier New"'>#dcdcdc</span></li>
+  <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+      line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>Width
+      of the element&nbsp;<b>including</b>&nbsp;the border is&nbsp;</span><span
+      style='font-size:11.5pt;font-family:"Courier New"'>32.5%</span></li>
+  <ul style='margin-top:0in' type=circle>
+   <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+       line-height:normal'><b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>Hint:</span></b><span
+       style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>&nbsp;The&nbsp;</span><span
+       style='font-size:11.5pt;font-family:"Courier New"'>box-sizing</span><span
+       style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>&nbsp;CSS
+       property might be helpful. See April 12 slides.</span></li>
+  </ul>
+  <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+      line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>Space
+      between the border and the content of the element is&nbsp;</span><span
+      style='font-size:11.5pt;font-family:"Courier New"'>10px</span><span
+      style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>.</span></li>
+ </ul>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>Choice
+     image (i.e. dog, house, or toy image)</span></li>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+      line-height:normal'><b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>Hints:</span></b><span
+      style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>&nbsp;We did
+      not tell you the width or height of the image intentionally, as we want
+      you figure out how to get it to behave like this. There are many ways to
+      get the images to “shrink” inside its container</span></li>
+  <ul style='margin-top:0in' type=circle>
+   <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+       line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>You
+       might also find&nbsp;</span><span style='color:windowtext'><a
+       href="https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child"><span
+       style='font-size:11.5pt;font-family:"Courier New";color:#1228E2;
+       text-decoration:none'>:first-child</span></a></span><span
+       style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>&nbsp;pseudo-selector
+       helpful (but you don’t necessarily have to if you choose a different
+       approach)</span></li>
+  </ul>
+ </ul>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>Checkbox</span></li>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+      line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>The
+      unchecked image is&nbsp;</span><span style='font-size:11.5pt;font-family:
+      "Courier New"'>images/unchecked.png</span></li>
+  <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+      line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>The
+      height and width is of the image is&nbsp;</span><span style='font-size:
+      11.5pt;font-family:"Courier New"'>20px</span></li>
+  <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+      line-height:normal'><b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>Note:</span></b><span
+      style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>&nbsp;Do not
+      use an&nbsp;</span><span style='font-size:11.5pt;font-family:"Courier New"'>&lt;input
+      type=&quot;checkbox&quot; /&gt;</span><span style='font-size:14.0pt;
+      font-family:"Open Sans",sans-serif'>&nbsp;for this. Just display the
+      image.</span></li>
+ </ul>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:13.5pt;font-family:"Open Sans",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:13.5pt;font-family:"Open Sans",sans-serif;
+color:black'>2. Mobile layout</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>You need to also modify the CSS and HTML if necessary, to
+implement support a mobile view. The video below shows an example of how it
+should look and behave:</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><img border=0
+width=168 height=54 src="CS402-Lab%20Practical%206_files/image001.png"></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'>(Given in the
+folder)</p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>Note:</span></b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>&nbsp;You should&nbsp;<b>not</b>&nbsp;have to load your web page
+on your phone in order to test this layout. Emulate mobile in&nbsp;</span><a
+href="https://developers.google.com/web/tools/chrome-devtools/device-mode/"><span
+style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:#1228E2;
+text-decoration:none'>Chrome</span></a><span style='font-size:14.0pt;
+font-family:"Open Sans",sans-serif;color:black'>,&nbsp;</span><a
+href="https://developer.mozilla.org/en-US/docs/Tools/Responsive_Design_Mode"><span
+style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:#1228E2;
+text-decoration:none'>Firefox</span></a><span style='font-size:14.0pt;
+font-family:"Open Sans",sans-serif;color:black'>, or&nbsp;</span><a
+href="http://www.kirkville.com/use-safaris-responsive-design-mode-in-el-capitan/"><span
+style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:#1228E2;
+text-decoration:none'>Safari</span></a><span style='font-size:14.0pt;
+font-family:"Open Sans",sans-serif;color:black'>.</span></p>
+
+<ul style='margin-top:0in' type=circle>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>If
+     the page is viewed on mobile:</span></li>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+      line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>The
+      viewport should be set to zoom-level 100%, and the width should be the
+      device width</span></li>
+ </ul>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>If
+     the device screen size is less than&nbsp;</span><span style='font-size:
+     11.5pt;font-family:"Courier New"'>700px</span><span style='font-size:14.0pt;
+     font-family:"Open Sans",sans-serif'>&nbsp;wide:</span></li>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+      line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>The
+      width of the page content should be&nbsp;</span><span style='font-size:
+      11.5pt;font-family:"Courier New"'>95%</span><span style='font-size:14.0pt;
+      font-family:"Open Sans",sans-serif'>&nbsp;instead of&nbsp;</span><span
+      style='font-size:11.5pt;font-family:"Courier New"'>700px</span></li>
+  <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+      line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>The
+      yellow circles in the page header should not appear</span></li>
+ </ul>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>If
+     the device screen size is less than&nbsp;</span><span style='font-size:
+     11.5pt;font-family:"Courier New"'>500px</span><span style='font-size:14.0pt;
+     font-family:"Open Sans",sans-serif'>&nbsp;wide:</span></li>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+      line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>Each
+      answer choice should be&nbsp;</span><span style='font-size:11.5pt;
+      font-family:"Courier New"'>49%</span><span style='font-size:14.0pt;
+      font-family:"Open Sans",sans-serif'>&nbsp;in width instead of&nbsp;</span><span
+      style='font-size:11.5pt;font-family:"Courier New"'>32.5%</span></li>
+ </ul>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:13.5pt;font-family:"Open Sans",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:13.5pt;font-family:"Open Sans",sans-serif;
+color:black'>3. Quiz behaviour</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>This web page is a 3-question personality quiz. Write the code
+necessary to implement the quiz behaviour as detailed below.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>Even though you will mostly be writing JavaScript for this part,
+you may need to also update the HTML or CSS in order to implement the behaviour
+as described.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>Dataset Attributes</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>Note that you should take advantage of the&nbsp;</span><a
+href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes"><span
+style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:#1228E2;
+text-decoration:none'>dataset attributes</span></a><span style='font-size:14.0pt;
+font-family:"Open Sans",sans-serif;color:black'>&nbsp;added to the HTML
+elements in&nbsp;</span><span style='font-size:11.5pt;font-family:"Courier New";
+color:black'>index.html</span><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>:</span></p>
+
+<ul style='margin-top:0in' type=circle>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:11.5pt;font-family:"Courier New"'>data-choice-id</span><span
+     style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>: Maps to
+     which quiz result the choice should “count” for, as defined in&nbsp;</span><span
+     style='font-size:11.5pt;font-family:"Courier New"'>constants.js</span><span
+     style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>. See details
+     below for scoring and what to do if there are ties.</span></li>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:11.5pt;font-family:"Courier New"'>data-question-id</span><span
+     style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>: Maps to the
+     question number: one, two, and three.</span></li>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>You can access these attributes in JavaScript by using:</span></p>
+
+<ul style='margin-top:0in' type=circle>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>element</span><span
+     style='font-size:11.5pt;font-family:"Courier New"'>.dataset.choiceId</span></li>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>element</span><span
+     style='font-size:11.5pt;font-family:"Courier New"'>.dataset.questionId</span></li>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>And you can select these attributes via CSS selectors like the
+following:</span></p>
+
+<ul style='margin-top:0in' type=circle>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:11.5pt;font-family:"Courier New"'>[data-choice-id='blep']</span></li>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:11.5pt;font-family:"Courier New"'>[data-question-id='two']</span></li>
+</ul>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;text-align:justify;line-height:normal'><span style='font-size:
+11.5pt;font-family:"Courier New";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;text-align:justify;line-height:normal'><span style='font-size:
+14.0pt;font-family:"Open Sans",sans-serif;color:black'>&nbsp;</span></p>
+
+<div class=MsoNormal align=center style='margin-bottom:0in;text-align:center;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>
+
+<hr size=3 width=919 style='width:688.95pt' noshade style='color:black'
+align=center>
+
+</span></div>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>Clicking an answer</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>When the user clicks an answer choice, the answer choices should
+update in the following way:</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><img border=0
+width=447 height=174 id="Picture 3"
+src="CS402-Lab%20Practical%206_files/image004.png"></p>
+
+<ul style='margin-top:0in' type=circle>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>For
+     the selected item:</span></li>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+      line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>The
+      checkbox image should change from unchecked to checked</span></li>
+  <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+      line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>Background
+      colour is&nbsp;</span><span style='font-size:11.5pt;font-family:"Courier New"'>#cfe3ff</span></li>
+  <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+      line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>The
+      checked image is&nbsp;</span><span style='font-size:11.5pt;font-family:
+      "Courier New"'>images/checked.png</span></li>
+ </ul>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>For
+     the unchosen items:</span></li>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+      line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>They
+      should be made semi-transparent by setting their&nbsp;</span><span
+      style='font-size:11.5pt;font-family:"Courier New"'>opacity: 0.6;</span></li>
+  <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+      line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>Note
+      that only the unchosen items&nbsp;<i>for this question</i>&nbsp;should
+      change style.</span></li>
+ </ul>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>Changing an answer</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>If the user has not completed the quiz (i.e. there is at least one
+unanswered question), they should be able to change their answer to a question
+by clicking a different answer.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>After the user has answered every question, the answer choices
+should lock and it should no longer be possible to change an answer, until the
+user clicks “Restart quiz” or refreshes the page.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>Completing the quiz</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>After the user has answered all three questions, the quiz is
+complete.</span></p>
+
+<ul style='margin-top:0in' type=circle>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>It
+     should not be possible to select another answer after you’ve completed the
+     quiz.</span></li>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+      line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>i.e.
+      you click another dog after the quiz is complete, nothing on the page
+      should change.</span></li>
+ </ul>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>The
+     page should remain in this “completed” state until the user refreshes the
+     page or clicks “Restart quiz”.</span></li>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>The personality results should appear at the bottom of the page,
+with the personality data that corresponds to the dog, as defined by&nbsp;</span><span
+style='font-size:11.5pt;font-family:"Courier New";color:black'>constants.js</span><span
+style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:black'>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>Here is the description of how the personality results should
+look:</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><img border=0
+width=498 height=261 id="Picture 5"
+src="CS402-Lab%20Practical%206_files/image005.png"></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black;background:white'>Result button</span></p>
+
+<ul style='margin-top:0in' type=circle>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal;background:white'><span style='font-size:14.0pt;
+     font-family:"Open Sans",sans-serif'>Background color is&nbsp;</span><span
+     style='font-size:11.5pt;font-family:"Courier New"'>#cecece</span></li>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal;background:white'><span style='font-size:14.0pt;
+     font-family:"Open Sans",sans-serif'>On hover, the color should change
+     to&nbsp;</span><span style='font-size:11.5pt;font-family:"Courier New"'>#e0e0e0</span></li>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><img border=0
+width=534 height=50 id="Picture 6"
+src="CS402-Lab%20Practical%206_files/image006.png"></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>Scoring
+the quiz</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>The&nbsp;</span><span
+style='font-size:11.5pt;font-family:"Courier New"'>data-choice-id</span><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;for each
+answer choice maps to the key name for each possible result in&nbsp;</span><span
+style='font-size:11.5pt;font-family:"Courier New"'>RESULTS_MAP</span><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>, stored in&nbsp;</span><span
+style='font-size:11.5pt;font-family:"Courier New"'>constants.js</span><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>. You can
+access&nbsp;</span><span style='font-size:11.5pt;font-family:"Courier New"'>RESULTS_MAP</span><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;in&nbsp;</span><span
+style='font-size:11.5pt;font-family:"Courier New"'>script.js</span><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;because&nbsp;</span><span
+style='font-size:11.5pt;font-family:"Courier New"'>constants.js</span><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;is included
+before&nbsp;</span><span style='font-size:11.5pt;font-family:"Courier New"'>script.js</span><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;in&nbsp;</span><span
+style='font-size:11.5pt;font-family:"Courier New"'>index.html</span><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>When
+the quiz is complete, you can score the quiz by tallying the&nbsp;</span><span
+style='font-size:11.5pt;font-family:"Courier New"'>data-choice-id</span><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>s from each
+answer. For example, if a user chooses&nbsp;</span><span style='font-size:11.5pt;
+font-family:"Courier New"'>blepdog.jpg</span><span style='font-size:12.0pt;
+font-family:"Times New Roman",serif'>,&nbsp;</span><span style='font-size:11.5pt;
+font-family:"Courier New"'>sleepybed.jpg</span><span style='font-size:12.0pt;
+font-family:"Times New Roman",serif'>, and&nbsp;</span><span style='font-size:
+11.5pt;font-family:"Courier New"'>bleptoy.jpg</span><span style='font-size:
+12.0pt;font-family:"Times New Roman",serif'>, you should show the title and
+contents from&nbsp;</span><span style='font-size:11.5pt;font-family:"Courier New"'>RESULTS_MAP['blep']</span><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>If
+there is a tie, i.e. if someone chooses all unique&nbsp;</span><span
+style='font-size:11.5pt;font-family:"Courier New"'>data-choice-id</span><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>s, the answer to
+the first question should win. For example, if a user chooses&nbsp;</span><span
+style='font-size:11.5pt;font-family:"Courier New"'>burgerdog.jpg</span><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>,&nbsp;</span><span
+style='font-size:11.5pt;font-family:"Courier New"'>nerdbed.jpg</span><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>, and&nbsp;</span><span
+style='font-size:11.5pt;font-family:"Courier New"'>shydog.jpg</span><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>, you should show
+the title and contents from&nbsp;</span><span style='font-size:11.5pt;
+font-family:"Courier New"'>RESULTS_MAP['burger']</span><span style='font-size:
+12.0pt;font-family:"Times New Roman",serif'>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Times New Roman",serif'>Resetting
+the quiz</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Times New Roman",serif'>If
+the user clicks the “Restart quiz” button, the page should reset to its
+original state.</span></p>
+
+<ul style='margin-top:0in' type=circle>
+ <li class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+     normal'><span style='font-size:14.0pt;font-family:"Times New Roman",serif'>The
+     answer choices should return to their original appearance before the quiz
+     was complete</span></li>
+ <li class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+     normal'><span style='font-size:14.0pt;font-family:"Times New Roman",serif'>The
+     personality results should disappear</span></li>
+ <li class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+     normal'><span style='font-size:14.0pt;font-family:"Times New Roman",serif'>The
+     answer choices should be selectable again, and clicking on a different set
+     of answers should result in showing an updated personality type.</span></li>
+ <li class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+     normal'><span style='font-size:14.0pt;font-family:"Times New Roman",serif'>The
+     page should look and behave the same as if you had refreshed the page (but
+     you should not actually refresh the page)</span></li>
+ <li class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+     normal'><span style='font-size:14.0pt;font-family:"Times New Roman",serif'>You
+     should also make the page scroll to the top of the “Pick a pup” element.</span></li>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+      normal'><span style='font-size:14.0pt;font-family:"Times New Roman",serif'>You
+      can call&nbsp;</span><span style='font-size:14.0pt;font-family:"Courier New"'>element.scrollIntoView();</span><span
+      style='font-size:14.0pt;font-family:"Times New Roman",serif'>&nbsp;to do
+      this. See&nbsp;</span><a
+      href="https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView"><span
+      style='font-size:14.0pt;font-family:"Times New Roman",serif;color:#1228E2'>mdn</span></a><span
+      style='font-size:14.0pt;font-family:"Times New Roman",serif'>&nbsp;for
+      more details.</span></li>
+ </ul>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Courier New"'>constants.js</span></b></p>
+
+<ul style='margin-top:0in' type=circle>
+ <li class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+     normal'><span style='font-size:14.0pt;font-family:"Times New Roman",serif'>This
+     file contains the definition of the object&nbsp;</span><span
+     style='font-size:14.0pt;font-family:"Courier New"'>RESULTS_MAP</span><span
+     style='font-size:14.0pt;font-family:"Times New Roman",serif'>, which maps
+     the dog type to its result title and description.</span></li>
+ <li class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+     normal'><span style='font-size:14.0pt;font-family:"Times New Roman",serif'>Because
+     this variable is declared in the global scope, you can access this
+     variable in&nbsp;</span><span style='font-size:14.0pt;font-family:"Courier New"'>script.js</span><span
+     style='font-size:14.0pt;font-family:"Times New Roman",serif'>.</span></li>
+ <li class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+     normal'><span style='font-size:14.0pt;font-family:"Times New Roman",serif'>You
+     should&nbsp;<b>not</b>&nbsp;have to modify this file to solve the
+     homework.</span></li>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Courier New"'>script.js</span></b></p>
+
+<ul style='margin-top:0in' type=circle>
+ <li class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+     normal'><span style='font-size:14.0pt;font-family:"Times New Roman",serif'>This
+     is the file in which we expect you to implement the quiz behavior.</span></li>
+ <li class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+     normal'><span style='font-size:14.0pt;font-family:"Times New Roman",serif'>You
+     should define and attach event listeners in this file.</span></li>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Times New Roman",serif'>Image
+to personality mapping</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>The&nbsp;</span><span
+style='font-size:11.5pt;font-family:"Courier New"'>RESULTS_MAP</span><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;is defined
+in&nbsp;</span><span style='font-size:11.5pt;font-family:"Courier New"'>constants.js</span><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;and the
+images are saved in the&nbsp;</span><span style='font-size:11.5pt;font-family:
+"Courier New"'>images/</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;directory.</span></p>
+
+<ul style='margin-top:0in' type=circle>
+ <li class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+     normal'><span style='font-size:11.5pt;font-family:"Courier New"'>blep{dog,bed,toy}.jpg</span><span
+     style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;corresponds
+     to&nbsp;</span><span style='font-size:11.5pt;font-family:"Courier New"'>blep</span><span
+     style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;in&nbsp;</span><span
+     style='font-size:11.5pt;font-family:"Courier New"'>RESULTS_MAP</span></li>
+ <li class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+     normal'><span style='font-size:11.5pt;font-family:"Courier New"'>happy{dog,bed,toy}.jpg</span><span
+     style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;corresponds
+     to&nbsp;</span><span style='font-size:11.5pt;font-family:"Courier New"'>happy</span><span
+     style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;in&nbsp;</span><span
+     style='font-size:11.5pt;font-family:"Courier New"'>RESULTS_MAP</span></li>
+ <li class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+     normal'><span style='font-size:11.5pt;font-family:"Courier New"'>sleeping{dog,bed,toy}.jpg</span><span
+     style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;corresponds
+     to&nbsp;</span><span style='font-size:11.5pt;font-family:"Courier New"'>sleeping</span><span
+     style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;in&nbsp;</span><span
+     style='font-size:11.5pt;font-family:"Courier New"'>RESULTS_MAP</span></li>
+ <li class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+     normal'><span style='font-size:11.5pt;font-family:"Courier New"'>dopey{dog,bed,toy}.jpg</span><span
+     style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;corresponds
+     to&nbsp;</span><span style='font-size:11.5pt;font-family:"Courier New"'>dopey</span><span
+     style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;in&nbsp;</span><span
+     style='font-size:11.5pt;font-family:"Courier New"'>RESULTS_MAP</span></li>
+ <li class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+     normal'><span style='font-size:11.5pt;font-family:"Courier New"'>burger{dog,bed,toy}.jpg</span><span
+     style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;corresponds
+     to&nbsp;</span><span style='font-size:11.5pt;font-family:"Courier New"'>burger</span><span
+     style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;in&nbsp;</span><span
+     style='font-size:11.5pt;font-family:"Courier New"'>RESULTS_MAP</span></li>
+ <li class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+     normal'><span style='font-size:11.5pt;font-family:"Courier New"'>cart{dog,bed,toy}.jpg</span><span
+     style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;corresponds
+     to&nbsp;</span><span style='font-size:11.5pt;font-family:"Courier New"'>cart</span><span
+     style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;in&nbsp;</span><span
+     style='font-size:11.5pt;font-family:"Courier New"'>RESULTS_MAP</span></li>
+ <li class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+     normal'><span style='font-size:11.5pt;font-family:"Courier New"'>nerd{dog,bed,toy}.jpg</span><span
+     style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;corresponds
+     to&nbsp;</span><span style='font-size:11.5pt;font-family:"Courier New"'>nerd</span><span
+     style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;in&nbsp;</span><span
+     style='font-size:11.5pt;font-family:"Courier New"'>RESULTS_MAP</span></li>
+ <li class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+     normal'><span style='font-size:11.5pt;font-family:"Courier New"'>shy{dog,bed,toy}.jpg</span><span
+     style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;corresponds
+     to&nbsp;</span><span style='font-size:11.5pt;font-family:"Courier New"'>shy</span><span
+     style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;in&nbsp;</span><span
+     style='font-size:11.5pt;font-family:"Courier New"'>RESULTS_MAP</span></li>
+ <li class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+     normal'><span style='font-size:11.5pt;font-family:"Courier New"'>sleepy{dog,bed,toy}.jpg</span><span
+     style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;corresponds
+     to&nbsp;</span><span style='font-size:11.5pt;font-family:"Courier New"'>sleepy</span><span
+     style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;in&nbsp;</span><span
+     style='font-size:11.5pt;font-family:"Courier New"'>RESULTS_MAP</span></li>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>NOTE</span></b><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>: To make this
+easier to test, the items for each question are in the order displayed above,
+i.e. the first answer of every question maps to&nbsp;</span><span
+style='font-size:11.5pt;font-family:"Courier New"'>blep</span><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>, the second
+answer of every question maps to&nbsp;</span><span style='font-size:11.5pt;
+font-family:"Courier New"'>happy</span><span style='font-size:12.0pt;
+font-family:"Times New Roman",serif'>, etc.&nbsp;<b>You should not rely on this
+ordering for your solution.</b>&nbsp;Instead, use the dataset attributes as
+described at the top of this section.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:18.0pt;font-family:"Open Sans",sans-serif'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:18.0pt;font-family:"Open Sans",sans-serif'>Part
+2: Evil extension</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>The
+next two parts of the assignment involve writing Chrome extensions.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>The
+first extension is called “Evil extension.” When you install it, all instances
+of “there”, “their”, and “they’re” on the page are changed to the wrong
+spelling in the following way:</span></p>
+
+<ul style='margin-top:0in' type=circle>
+ <li class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+     normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>“there”
+     changes to “their”</span></li>
+ <li class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+     normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>“their”
+     changes to “there”</span></li>
+ <li class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+     normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>“they’re”
+     also changes to “there”</span></li>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>This
+mapping (along with a few case-related variations) is stored in the&nbsp;</span><span
+style='font-size:11.5pt;font-family:"Courier New"'>MATCH_LIST</span><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;object at
+the top of the file. Use this mapping to complete the extension.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:13.5pt;font-family:"Open Sans",sans-serif'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:13.5pt;font-family:"Open Sans",sans-serif'>1.
+Install Chrome</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>This
+is the only assignment in the quarter where you&nbsp;<b>must</b>&nbsp;use
+Chrome. Please&nbsp;</span><a href="https://www.google.com/chrome/"><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif;color:#1228E2'>download
+and install Chrome</span></a><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;if
+you haven’t already.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:13.5pt;font-family:"Open Sans",sans-serif'>2.
+Install the Evil Extension</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>The
+starter code comes with the starter code for the Evil Extension.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>Open
+chrome://extensions</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>In
+the URL bar, type in&nbsp;</span><span style='font-size:11.5pt;font-family:
+"Courier New"'>chrome://extensions</span><span style='font-size:12.0pt;
+font-family:"Times New Roman",serif'>&nbsp;and hit enter. This will bring you
+to Chrome’s extensions settings page.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><img border=0
+width=438 height=235 id="Picture 7"
+src="CS402-Lab%20Practical%206_files/image007.png"></p>
+
+<p style='margin:0in;text-align:justify'><strong><span style='font-size:14.0pt;
+font-family:"Open Sans",sans-serif;color:black'>&nbsp;</span></strong></p>
+
+<p style='margin:0in;text-align:justify'><strong><span style='font-size:14.0pt;
+font-family:"Open Sans",sans-serif;color:black'>Check “Developer mode”</span></strong></p>
+
+<p style='margin:0in;text-align:justify'><span style='font-size:14.0pt;
+font-family:"Open Sans",sans-serif;color:black'>In the upper right corner,
+there is a check box that says “Developer mode.” Check this box.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><img border=0
+width=538 height=230 id="Picture 15"
+src="CS402-Lab%20Practical%206_files/image008.png"></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><strong><span
+style='font-size:14.0pt;line-height:107%;font-family:"Open Sans",sans-serif;
+color:black;background:#F8F9F9'>&nbsp;</span></strong></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><strong><span
+style='font-size:14.0pt;line-height:107%;font-family:"Open Sans",sans-serif;
+color:black;background:#F8F9F9'>Click “Load unpacked extension”</span></strong></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><img border=0
+width=546 height=177 id="Picture 4"
+src="CS402-Lab%20Practical%206_files/image009.png"></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>Navigate to the “evil-extension” directory”</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>In the file chooser window that pops up, you should navigate to
+the&nbsp;</span><span style='font-size:11.5pt;font-family:"Courier New";
+color:black'>evil-extension</span><span style='font-size:14.0pt;font-family:
+"Open Sans",sans-serif;color:black'>&nbsp;directory included in the starter
+code.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><img border=0
+width=495 height=224 id="Picture 8"
+src="CS402-Lab%20Practical%206_files/image010.png"></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+style='font-size:14.0pt;line-height:107%;font-family:"Open Sans",sans-serif;
+color:black;background:#F8F9F9'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+style='font-size:14.0pt;line-height:107%;font-family:"Open Sans",sans-serif;
+color:black;background:#F8F9F9'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+style='font-size:14.0pt;line-height:107%;font-family:"Open Sans",sans-serif;
+color:black;background:#F8F9F9'>You should now see the Evil Extension in the
+list of extensions.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><img border=0
+width=507 height=273 id="Picture 9"
+src="CS402-Lab%20Practical%206_files/image011.png"></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:13.5pt;font-family:"Open Sans",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:13.5pt;font-family:"Open Sans",sans-serif;
+color:black'>3. Verify Evil Extension is loaded</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>The Evil Extension contains a print statement in&nbsp;</span><span
+style='font-size:11.5pt;font-family:"Courier New";color:black'>page.js</span><span
+style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:black'>. Because
+this is a Chrome extension, this print statement will not show up in the usual
+Web Console. The following steps will show you how to view this print
+statement.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>Navigate to a test file</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>You can actually create any page, but we’re using a test file for
+simplicity.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>Open the following link in a new tab:</span></p>
+
+<ul style='margin-top:0in' type=circle>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><u><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+     color:#1228E2'>simple-test.html</span></u></li>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>Open the Web Console</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>On the&nbsp;</span><u><span style='font-size:14.0pt;font-family:
+"Open Sans",sans-serif;color:#1228E2'>simple-test</span></u><span
+style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:black'>&nbsp;page,
+open the Web Console. You should see the debug print statement:</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><img border=0
+width=432 height=267 id="Picture 10"
+src="CS402-Lab%20Practical%206_files/image012.png"></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>Make a change to&nbsp;</span></b><b><span style='font-size:11.5pt;
+font-family:"Courier New";color:black'>page.js</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>Every time you make a change to the extension, you will need to
+refresh the&nbsp;</span><span style='font-size:11.5pt;font-family:"Courier New";
+color:black'>chrome://extensions</span><span style='font-size:14.0pt;
+font-family:"Open Sans",sans-serif;color:black'>&nbsp;page.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>Try making a change and verify it shows up in the console:</span></p>
+
+<ul style='margin-top:0in' type=circle>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>Add
+     a second&nbsp;</span><span style='font-size:11.5pt;font-family:"Courier New"'>console.log</span><span
+     style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>&nbsp;statement
+     at the bottom of&nbsp;</span><span style='font-size:11.5pt;font-family:
+     "Courier New"'>page.js</span><span style='font-size:14.0pt;font-family:
+     "Open Sans",sans-serif'>, such as&nbsp;</span><span style='font-size:11.5pt;
+     font-family:"Courier New"'>console.log ('Extension updated');</span></li>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>Navigate
+     to chrome://extensions in a new tab, and either click “Reload” or press
+     command-R (ctrl-R on Windows)</span></li>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>Navigate
+     to&nbsp;</span><u><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+     color:#1228E2'>simple-test.html</span></u><span style='font-size:14.0pt;
+     font-family:"Open Sans",sans-serif'>&nbsp;and view the Web Console.</span></li>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>You should see your second print statement in the Web Console:</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><img border=0
+width=602 height=258 id="Picture 11"
+src="CS402-Lab%20Practical%206_files/image013.png"></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>Debugging the script</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>You will probably want to debug your extension’s JavaScript using
+the&nbsp;</span><a
+href="https://developers.google.com/web/tools/chrome-devtools/javascript/reference"><span
+style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:#1228E2'>Chrome
+Debugger</span></a><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>. You can find the JavaScript files from this extension by
+navigating to:</span></p>
+
+<ul style='margin-top:0in' type=circle>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>Sources
+     -&gt; Content Scripts -&gt; Top -&gt; Evil Extension -&gt; page.js</span></li>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><img border=0
+width=602 height=242 id="Picture 12"
+src="CS402-Lab%20Practical%206_files/image014.png"></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>You can then set breakpoints in this view.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:13.5pt;font-family:"Open Sans",sans-serif;
+color:black'>4. Implement&nbsp;</span></b><b><span style='font-size:10.0pt;
+font-family:"Courier New";color:black'>transformTextNodes</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>The&nbsp;</span><span style='font-size:11.5pt;font-family:"Courier New";
+color:black'>transformTextNodes</span><span style='font-size:14.0pt;font-family:
+"Open Sans",sans-serif;color:black'>&nbsp;function should recursively walk the
+DOM tree and modify the&nbsp;</span><span style='font-size:11.5pt;font-family:
+"Courier New";color:black'>textContents</span><span style='font-size:14.0pt;
+font-family:"Open Sans",sans-serif;color:black'>&nbsp;of each text node that contains
+a “there”, “their”, or “they’re” as necessary:</span></p>
+
+<ul style='margin-top:0in' type=circle>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>“there”
+     changes to “their”</span></li>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>“their”
+     changes to “there”</span></li>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>“they’re”
+     also changes to “there”</span></li>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>These rules (along with a few case shifts) are contained by&nbsp;</span><span
+style='font-size:11.5pt;font-family:"Courier New";color:black'>MATCH_LIST</span><span
+style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:black'>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>The&nbsp;</span><span style='font-size:11.5pt;font-family:"Courier New";
+color:black'>transformTextNodes</span><span style='font-size:14.0pt;font-family:
+"Open Sans",sans-serif;color:black'>&nbsp;function takes a DOM node reference
+as a parameter. At the bottom of&nbsp;</span><span style='font-size:11.5pt;
+font-family:"Courier New";color:black'>page.js</span><span style='font-size:
+14.0pt;font-family:"Open Sans",sans-serif;color:black'>, there’s an initial
+call to the function:&nbsp;</span><span style='font-size:11.5pt;font-family:
+"Courier New";color:black'>transformTextNodes(document.body)</span><span
+style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:black'>. You
+should not have to change this function call.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>Limitations:</span></b><span style='font-size:14.0pt;font-family:
+"Open Sans",sans-serif;color:black'><br>
+It is OK if your extension has the following limitations:</span></p>
+
+<ul style='margin-top:0in' type=circle>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>Your
+     transformation only has to work on the variants of “there” as defined
+     in&nbsp;</span><span style='font-size:11.5pt;font-family:"Courier New"'>MATCH_LIST</span><span
+     style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>. For example,
+     your function does&nbsp;<i>not</i>&nbsp;have to change&nbsp;</span><span
+     style='font-size:11.5pt;font-family:"Courier New"'>thERE</span><span
+     style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>&nbsp;or&nbsp;</span><span
+     style='font-size:11.5pt;font-family:"Courier New"'>ThEy'Re</span><span
+     style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>.</span></li>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>Your
+     transformation only has to work on exactly matches to&nbsp;</span><span
+     style='font-size:11.5pt;font-family:"Courier New"'>MATCH_LIST</span><span
+     style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>&nbsp;and not
+     substring matches. For example, For example, your function does&nbsp;<i>not</i>&nbsp;have
+     to change instances of “there” with punctuation, like&nbsp;</span><span
+     style='font-size:11.5pt;font-family:"Courier New"'>&quot;There,&quot; she
+     said.</span><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>&nbsp;or
+     words where “there” is a substring like “therefore”</span></li>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>Note:</span></b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>&nbsp;You may not use the&nbsp;</span><span style='font-size:11.5pt;
+font-family:"Courier New";color:black'>TreeWalker</span><span style='font-size:
+14.0pt;font-family:"Open Sans",sans-serif;color:black'>&nbsp;JavaScript API to
+solve this, only because we want you to get a deeper understanding of the DOM
+through walking the tree manually. </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>Helpful&nbsp;</span></b><b><span style='font-size:11.5pt;
+font-family:"Courier New";color:black'>Node</span></b><b><span
+style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:black'>&nbsp;properties</span></b></p>
+
+<ul style='margin-top:0in' type=circle>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>These
+     are also defined as:</span></li>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+      line-height:normal'><span style='font-size:11.5pt;font-family:"Courier New"'>childNodes</span><span
+      style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>: list of the
+      children of a given node (</span><span style='color:windowtext'><a
+      href="https://developer.mozilla.org/en-US/docs/Web/API/Node/childNodes"><span
+      style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:#1228E2'>mdn</span></a></span><span
+      style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>)</span></li>
+  <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+      line-height:normal'><span style='font-size:11.5pt;font-family:"Courier New"'>textContent</span><span
+      style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>: the text
+      content of the node and all of its descendants (</span><span
+      style='color:windowtext'><a
+      href="https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent"><span
+      style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:#1228E2'>mdn</span></a></span><span
+      style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>)</span></li>
+  <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+      line-height:normal'><span style='font-size:11.5pt;font-family:"Courier New"'>nodeType</span><span
+      style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>: the type of
+      the node, such as&nbsp;</span><span style='font-size:11.5pt;font-family:
+      "Courier New"'>Node.TEXT_NODE</span><span style='font-size:14.0pt;
+      font-family:"Open Sans",sans-serif'>&nbsp;or&nbsp;</span><span
+      style='font-size:11.5pt;font-family:"Courier New"'>Node.ELEMENT_NODE</span><span
+      style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>&nbsp;</span><span
+      style='color:windowtext'><a
+      href="https://developer.mozilla.org/en-US/docs/Web/API/Node/nodetype"><span
+      style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:#1228E2'>mdn</span></a></span></li>
+  <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+      line-height:normal'><span style='font-size:11.5pt;font-family:"Courier New"'>nodeName</span><span
+      style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>: the name of
+      the node: will print out the tag name if an&nbsp;</span><span
+      style='font-size:11.5pt;font-family:"Courier New"'>Element</span><span
+      style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>&nbsp;(</span><span
+      style='color:windowtext'><a
+      href="https://developer.mozilla.org/en-US/docs/Web/API/Node/nodename"><span
+      style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:#1228E2'>mdn</span></a></span><span
+      style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>)</span></li>
+ </ul>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>Hint: Skip&nbsp;</span></b><b><span style='font-size:11.5pt;
+font-family:"Courier New";color:black'>SCRIPT</span></b><b><span
+style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:black'>&nbsp;and&nbsp;</span></b><b><span
+style='font-size:11.5pt;font-family:"Courier New";color:black'>STYLE</span></b><b><span
+style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:black'>&nbsp;elements</span></b></p>
+
+<ul style='margin-top:0in' type=circle>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>You
+     should not examine the&nbsp;</span><span style='font-size:11.5pt;
+     font-family:"Courier New"'>textContent</span><span style='font-size:14.0pt;
+     font-family:"Open Sans",sans-serif'>&nbsp;of&nbsp;</span><span
+     style='font-size:11.5pt;font-family:"Courier New"'>&lt;script&gt;</span><span
+     style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>&nbsp;and&nbsp;</span><span
+     style='font-size:11.5pt;font-family:"Courier New"'>&lt;style&gt;</span><span
+     style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>&nbsp;tags, as
+     this might affect the JavaScript / CSS of a web page if that page is
+     embedding JavaScript or CSS directly in the HTML via those tags.</span></li>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>Hint: String manipulation</span></b></p>
+
+<ul style='margin-top:0in' type=circle>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>You
+     may need to use JavaScript string methods that we did not cover in class.
+     You can see the&nbsp;</span><span style='color:windowtext'><a
+     href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#Methods_unrelated_to_HTML"><span
+     style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:#1228E2'>MDN
+     string reference</span></a></span><span style='font-size:14.0pt;
+     font-family:"Open Sans",sans-serif'>&nbsp;for the complete list of
+     operations. Particularly&nbsp;</span><span style='font-size:11.5pt;
+     font-family:"Courier New"'>split</span><span style='font-size:14.0pt;
+     font-family:"Open Sans",sans-serif'>,&nbsp;</span><span style='font-size:
+     11.5pt;font-family:"Courier New"'>join</span><span style='font-size:14.0pt;
+     font-family:"Open Sans",sans-serif'>, and&nbsp;</span><span
+     style='font-size:11.5pt;font-family:"Courier New"'>trim</span><span
+     style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>&nbsp;may be
+     helpful.</span></li>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+      line-height:normal'><span style='color:windowtext'><a
+      href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#Methods_unrelated_to_HTML"><span
+      style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:#1228E2'>MDN
+      string reference</span></a></span></li>
+ </ul>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif;
+color:black'>Implementation hints</span></b></p>
+
+<ul style='margin-top:0in' type=circle>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>The&nbsp;</span><span
+     style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:#1228E2'>coding
+     examples</span><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>&nbsp;include&nbsp;</span><span
+     style='font-size:11.5pt;font-family:"Courier New"'>dom-walk-script.js</span><span
+     style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>, which may be
+     useful to you. This example both:</span></li>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+      line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>Recursively
+      walks the entire DOM</span></li>
+  <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+      line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>Finds
+      the&nbsp;</span><span style='font-size:11.5pt;font-family:"Courier New"'>Text</span><span
+      style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>&nbsp;nodes
+      of the tree and prints them out</span></li>
+ </ul>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>As
+     explained, all text content of an HTML page is contained in a&nbsp;</span><span
+     style='font-size:11.5pt;font-family:"Courier New"'>Text</span><span
+     style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>&nbsp;node.
+     These text nodes are always leafs in the tree.</span></li>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+      line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>Here’s
+      an&nbsp;</span><span style='color:windowtext'><a
+      href="https://javascript.info/dom-nodes#other-node-types"><span
+      style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:#1228E2;
+      text-decoration:none'>interactive example</span></a></span><span
+      style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>-</span><span
+      style='color:windowtext'><a
+      href="https://javascript.info/dom-nodes#other-node-types"><span
+      style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>https://javascript.info/dom-nodes#other-node-types</span></a></span><span
+      style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>&nbsp;of the
+      nodes within the DOM</span></li>
+ </ul>
+ <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+     line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>The&nbsp;</span><span
+     style='font-size:11.5pt;font-family:"Courier New"'>textContent</span><span
+     style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>&nbsp;property
+     of each DOM Node represents the text content of the node itself along with
+     the text content of any descendants (</span><span style='color:windowtext'><a
+     href="https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent"><span
+     style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:#1228E2;
+     text-decoration:none'>mdn</span></a></span><span style='font-size:14.0pt;
+     font-family:"Open Sans",sans-serif'>-</span><span style='color:windowtext'><a
+     href="https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent"><span
+     style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent</span></a></span><span
+     style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>).</span></li>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+      line-height:normal'><span style='font-size:11.5pt;font-family:"Courier New"'>textContent</span><span
+      style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>&nbsp;is both
+      a readable and writeable property</span></li>
+  <ul style='margin-top:0in' type=circle>
+   <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+       line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>You
+       can view the text content of an element and its descendants like&nbsp;</span><span
+       style='font-size:11.5pt;font-family:"Courier New"'>console.log(element.textContent);</span></li>
+   <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+       line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>You
+       can modify the text content of an element and its descendants by
+       assigning the property to a new value, like&nbsp;</span><span
+       style='font-size:11.5pt;font-family:"Courier New"'>element.textContent =
+       'hello';</span></li>
+   <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+       line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>If
+       you edit the&nbsp;</span><span style='font-size:11.5pt;font-family:"Courier New"'>textContent</span><span
+       style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>&nbsp;of any
+       element that’s not a&nbsp;</span><span style='font-size:11.5pt;
+       font-family:"Courier New"'>Text</span><span style='font-size:14.0pt;
+       font-family:"Open Sans",sans-serif'>&nbsp;node, you may strip inline
+       tags:&nbsp;</span><span style='color:windowtext'><a
+       href="https://codepen.io/bee-arcade/pen/4d90a7fd410d1da9f836a502ff2374ae?editors=1010"><span
+       style='font-size:14.0pt;font-family:"Open Sans",sans-serif;color:#1228E2;
+       text-decoration:none'>See this example</span></a></span></li>
+   <li class=MsoNormal style='color:black;margin-bottom:0in;text-align:justify;
+       line-height:normal'><span style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>Therefore
+       if you are trying to write an extension to manipulate text (such as for
+       Part 2 of this assignment), you&nbsp;<b>must</b>&nbsp;operate on
+       the&nbsp;</span><span style='font-size:11.5pt;font-family:"Courier New"'>textContent</span><span
+       style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>&nbsp;of
+       Text nodes, and&nbsp;<b>not</b>&nbsp;the&nbsp;</span><span
+       style='font-size:11.5pt;font-family:"Courier New"'>textContent</span><span
+       style='font-size:14.0pt;font-family:"Open Sans",sans-serif'>&nbsp;of
+       Element nodes</span></li>
+  </ul>
+ </ul>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:18.0pt;font-family:"Open Sans",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;line-height:
+normal'><b><span style='font-size:18.0pt;font-family:"Open Sans",sans-serif;
+color:black'>Part 3: Personalized Extension: </span></b><span style='font-size:
+18.0pt;font-family:"Open Sans",sans-serif;color:black'>Make Your Own Extension:
+Show your creativity.</span></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>CO23355 Music Box</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="musicbox-style.css"/>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+    <script src="./lib/dancer.min.js" defer></script>
+    <script src="./lib/fetch.js" defer></script>
+    <script src="audio-player.js" defer></script>
+    <script src="menu-screen.js" defer></script>
+    <script src="play-button.js" defer></script>
+    <script src="gif-display.js" defer></script>
+    <script src="music-screen.js" defer></script>
+    <script src="app.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<div id="menu">
+    <h1>Music Box</h1>
+    <fieldset>
+        <form id="menu-form">
+            <h2>1. Choose a song:</h2>
+            <select id="song-selector"></select>
+
+            <h2>2. Choose a theme:</h2>
+            <input type="text" id="theme-input" placeholder="Enter a word or phrase" />
+            <div id="error" class="inactive">Not enough gifs for this theme. Please try another.</div>
+
+            <input type="submit" value="Go" />
+        </form>
+    </fieldset>
+</div>
+<div id="gif-display" class="gif-display"></div>
+
+<div id="music" class="hidden">
+    <div id="gif-display" class="gif-display"></div>
+    <div id="control-bar">
+        <button id="play-button">
+            <img src="images/play.png" alt="Play" />
+        </button>
+    </div>
+    <h2>Now Playing: <span id="current-song"></span></h2>
+</div>
+
+</body>
+</html>
