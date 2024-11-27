@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #222;
+            color: white;
+            padding: 15px;
+            width: 20%;
+            float: left;
+            min-height: 100vh;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 15px 0;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        nav ul li a:hover {
+            color: #00bcd4;
+        }
+        main {
+            margin-left: 22%;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        a.button {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        a.button:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Manage Website Content</a></li>
+            <li><a href="#">Manage Admin Users</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Welcome, Admin!</h2>
+        <p>Use the menu on the left to navigate through admin options.</p>
+        <a href="#" class="button">Manage Content</a>
+        <a href="#" class="button">Manage Admins</a>
+    </main>
+</body>
+</html>
