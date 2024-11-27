@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<order xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="P3.xsd">
+    <orderId>12345</orderId>
+    <description>Book order for library</description>
+    <requestDate>2024-11-27</requestDate>
+    <lineItem>
+        <book>
+            <bookId>BK001</bookId>
+            <bookName>The Mystery of the Lost Key</bookName>
+            <genre>mystery</genre>
+            <publishDate>2021-05-14</publishDate>
+            <author>
+                <bio>Expert in crime thrillers.</bio>
+                <lastName>Doe</lastName>
+                <firstName>John</firstName>
+                <penName>J.D. Mystery</penName>
+            </author>
+            <author>
+                <bio>Co-author specializing in suspense.</bio>
+                <lastName>Smith</lastName>
+                <firstName>Jane</firstName>
+            </author>
+        </book>
+        <quantity>2</quantity>
+        <price>15.99</price>
+    </lineItem>
+    <lineItem>
+        <book>
+            <bookId>BK002</bookId>
+            <bookName>Science Wonders</bookName>
+            <genre>science-fiction</genre>
+            <publishDate>2023-09-10</publishDate>
+            <author>
+                <bio>Award-winning science writer.</bio>
+                <lastName>Brown</lastName>
+                <firstName>Emily</firstName>
+            </author>
+        </book>
+        <quantity>1</quantity>
+        <price>25.50</price>
+    </lineItem>
+</order>
